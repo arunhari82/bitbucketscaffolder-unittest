@@ -1,0 +1,28 @@
+{
+  "name": "bitbucket_script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@backstage/backend-plugin-api": "0.6.18",
+    "@backstage/config": "1.2.0",
+    "@backstage/errors": "1.2.4",
+    "@backstage/integration": "1.11.0",
+    "@backstage/plugin-scaffolder-node": "0.4.4",
+    "@backstage/plugin-scaffolder-node-test-utils": "0.1.4",
+    "fs-extra": "11.2.0",
+    "isomorphic-git": "1.25.10",
+    "winston": "3.13.0"
+  },
+  "devDependencies": {
+    "@backstage/plugin-scaffolder-node": "0.4.4",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2"
+  }
+}
