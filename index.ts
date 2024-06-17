@@ -8,17 +8,21 @@ import { mockContext } from './mockContext';
 
 
 export var token = "<<BBTOKEN>>";
-var reponame = "test-repo-5"
-export var repourl = "<<BBHOST>>?project=AN&"+"repo="+reponame;
+
+var reponame = "dev-hub-test"
+
+var bbhostname = "<<BBHOST>>"
+
+export var repourl = bbhostname+"?project=AN&"+"repo="+reponame;
 
 
 const config = new ConfigReader({
     integrations: {
         bitbucketServer: [
         {
-          host: '<<BBHOST>>',
+          host: bbhostname,
           token: token,
-          apiBaseUrl: 'https://<<BBHOST>>/rest/api/1.0',
+          apiBaseUrl: "https://"+bbhostname+"/rest/api/1.0",
         }
       ],
     },
@@ -38,4 +42,5 @@ const config = new ConfigReader({
     gitCommitMessage: "Initial Commit",
     gitAuthorName: "Arun Hariharan",
     gitAuthorEmail: "anattama@redhat.com",
+  
 }}));
